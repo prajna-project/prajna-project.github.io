@@ -1,6 +1,6 @@
 # prajna-homepage
 
-> A Vue.js project
+> Prajna Github Homepage
 
 ## Build Setup
 
