@@ -1,7 +1,8 @@
 export default {
     name: 'Homepage',
     data () {
-        return {};
+        return {
+        };
     },
     created () {}
 };
