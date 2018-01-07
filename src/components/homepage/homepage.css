@@ -1,0 +1,17 @@
+.home-page {
+    text-align: center;
+    margin-top: 42px;
+}
+.home-page .prajna-text {
+    font-weight: 200;
+}
+.home-page .operations {
+    margin-top: 66px
+}
+.home-page .operations a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+.home-page .operations a:last-child {
+    margin-right: 0;
+}
