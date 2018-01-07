@@ -3,7 +3,6 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
-const gadgetPlugin = require('@dp/prajna-gadget-plugin');
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -67,16 +66,5 @@ module.exports = {
     ]
   },
     plugins: [
-        new gadgetPlugin({
-            includes: ['./index.html'],
-            prajnaOptions: {
-                autopv: true,
-                project: 'prajna-test',
-                thirdParty: {
-                    category: 'lx-prajna-test',
-                    lingxiFallback: true
-                }
-            }
-        }),
     ]
 }
