@@ -11,6 +11,8 @@
     text-decoration: none;
     line-height: 42px;
     font-size: 18px;
+    color: #aa0000;
+    cursor: pointer;
 }
 .navigation a:last-child {
     margin-right: 0;

@@ -9,6 +9,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+const PrajnaWrapperPlugin = require('prajna-wrapper-plugin')
 
 const env = require('../config/prod.env')
 
@@ -71,6 +72,17 @@ const webpackConfig = merge(baseWebpackConfig, {
       },
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
+    }),
+    new PrajnaWrapperPlugin({
+      includes: ['./templates/index.html'],
+      options: {
+        autopv: false,
+        env: 'product',
+        project: 'prajna-homepage',
+        progressive: {
+          scriptPath: `https://cdn.jsdelivr.net/npm/prajna@1.0.0-rc.8/dist/prajna.1.0.0-rc.8.js`
+        }
+      }
     }),
     // keep module.id stable when vender modules does not change
     new webpack.HashedModuleIdsPlugin(),

@@ -56,7 +56,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         env: 'dev',
         project: 'prajna-homepage',
         progressive: {
-          scriptPath: `http://127.0.0.1:65003/prajna.1.0.0-rc.8.js`
+          scriptPath: `https://cdn.jsdelivr.net/npm/prajna@1.0.0-rc.8/dist/prajna.1.0.0-rc.8.js`
         }
       }
     }),

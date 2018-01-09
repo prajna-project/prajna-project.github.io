@@ -17,14 +17,9 @@ const Prajna = {
                 prajna.use(middleware);
             });
         }
-        prajna.use(function(ctx, next) {
-            console.log(ctx);
-            next();
-        });
         prajna.start();
         Vue.mixin({
             mounted() {
-                console.log('mounted!');
             }
         });
 
