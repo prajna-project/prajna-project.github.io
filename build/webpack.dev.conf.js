@@ -7,6 +7,7 @@ const baseWebpackConfig = require('./webpack.base.conf')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
+const PrajnaWrapperPlugin = require('prajna-wrapper-plugin')
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
@@ -47,6 +48,17 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       template: 'templates/index.html',
       favicon: 'templates/favicon.ico',
       inject: true
+    }),
+    new PrajnaWrapperPlugin({
+      includes: ['./templates/index.html'],
+      options: {
+        autopv: false,
+        env: 'dev',
+        project: 'prajna-homepage',
+        progressive: {
+          scriptPath: `http://127.0.0.1:65003/prajna.1.0.0-rc.8.js`
+        }
+      }
     }),
   ]
 })

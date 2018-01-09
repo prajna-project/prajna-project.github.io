@@ -1,16 +1,12 @@
 <template>
     <div class="home-page">
-        <h1 class="prajna-text">Prajñā</h1>
-        <h1 class="prajna-text">براجنا</h1>
-        <h1 class="prajna-text">प्रज्ञ</h1>
-        <h1 class="prajna-text">Prajna</h1>
-        <h1 class="prajna-text">般若</h1>
-        <h1 class="prajna-text">Праджня</h1>
-        <div class="operations">
-            <a href="//">Demo</a>
-            <a href="https://github.com/prajna-project/prajna/wiki">Documention</a>
-            <a href="mailto:youngleemails@gmail.com">Contact</a>
-        </div>
+        <!-- <h1 class="prajna-text">Prajñā</h1> -->
+        <!-- <h1 class="prajna-text">براجنا</h1> -->
+        <p class="prajna-text-prev bu">प्रज्ञ</p>
+        <p class="prajna-text en">Prajna</p>
+        <p class="prajna-text-next ch">般若</p>
+        <!-- <h1 class="prajna-text">Праджня</h1> -->
+        <navigation></navigation>
     </div>
 </template>
 

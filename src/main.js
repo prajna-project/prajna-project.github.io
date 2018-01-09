@@ -3,8 +3,10 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import Prajna from './prajna';
 
 Vue.config.productionTip = false;
+Vue.use(Prajna);
 
 /* eslint-disable no-new */
 new Vue({
@@ -12,4 +14,4 @@ new Vue({
     router,
     template: '<App/>',
     components: { App }
-})
+});

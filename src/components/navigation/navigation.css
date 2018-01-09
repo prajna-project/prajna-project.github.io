@@ -1,0 +1,17 @@
+.navigation {
+    position: fixed;
+    bottom: 18px;
+    display: block;
+    height: 42px;
+    width: 100%;
+    text-align:center;
+}
+.navigation a {
+    margin-right: 10px;
+    text-decoration: none;
+    line-height: 42px;
+    font-size: 18px;
+}
+.navigation a:last-child {
+    margin-right: 0;
+}
