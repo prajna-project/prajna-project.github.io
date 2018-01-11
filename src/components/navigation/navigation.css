@@ -1,18 +1,22 @@
 .navigation {
     position: fixed;
-    bottom: 18px;
+    bottom: 24px;
     display: block;
-    height: 42px;
+    height: 36px;
     width: 100%;
     text-align:center;
 }
 .navigation a {
     margin-right: 10px;
     text-decoration: none;
-    line-height: 42px;
+    line-height: 36px;
     font-size: 18px;
     color: #aa0000;
     cursor: pointer;
+    display: inline-block;
+}
+.navigation a:hover {
+    /* border-bottom: 1px solid #aa0000; */
 }
 .navigation a:last-child {
     margin-right: 0;
