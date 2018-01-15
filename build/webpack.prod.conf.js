@@ -79,6 +79,9 @@ const webpackConfig = merge(baseWebpackConfig, {
         autopv: false,
         env: 'product',
         project: 'prajna-homepage',
+        prajnaServerUrls: {
+          'product': 'http://45.32.251.136:8080/store/es'
+        },
         progressive: {
           scriptPath: `https://cdn.jsdelivr.net/npm/prajna@1.0.0-rc.8/dist/prajna.1.0.0-rc.8.js`
         }
