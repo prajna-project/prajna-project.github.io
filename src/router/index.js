@@ -9,7 +9,7 @@ const Homepage = (resolve) => {
 
 Vue.use(Router);
 
-export default new Router({
+const appRouter = new Router({
     routes: [
         {
             path: '/',
@@ -18,3 +18,24 @@ export default new Router({
         }
     ]
 });
+
+appRouter.afterEach(function (to, from, ) {
+    switch(to.name) {
+    case 'Homepage': 
+        Vue.prajna.set({
+            pageId: 'home-page'
+        });
+        // Vue.prajna.pageView();
+        break;
+    case 'DEMO': 
+        Vue.prajna.set({
+            pageId: 'demo-page'
+        });
+        // Vue.prajna.pageView();
+        break;
+    default:
+        break;
+    };
+});
+
+export default appRouter;

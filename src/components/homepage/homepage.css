@@ -1,25 +1,38 @@
 .home-page {
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: 156px;
     top: 50%;
     margin-top: -78px;
-    text-align: center;
+    text-align: right;
 }
 .home-page .prajna-text {
-    line-height: 44px;
+    line-height: 42px;
     font-size: 36px;
     font-weight: 200;
+    margin-right: 16px;
 }
 .home-page .prajna-text-prev {
-    line-height: 44px;
+    line-height: 42px;
     font-size: 24px;
     font-weight: 200;
     margin-bottom: 12px;
+    margin-right: 8px;
+    transform:skew(-4deg,0deg);
+    -ms-transform:skew(-4deg,0deg); /* IE 9 */
+    -moz-transform:skew(-4deg,0deg); /* Firefox */
+    -webkit-transform:skew(-4deg,0deg); /* Safari and Chrome */
+    -o-transform:skew(-4deg,0deg); /* Opera */
 }
 .home-page .prajna-text-next {
-    line-height: 44px;
+    line-height: 42px;
     font-size: 24px;
     font-weight: 200;
     margin-top: 12px;
+    margin-right: 8px;
+    transform:skew(4deg,0deg);
+    -ms-transform:skew(4deg,0deg); /* IE 9 */
+    -moz-transform:skew(4deg,0deg); /* Firefox */
+    -webkit-transform:skew(4deg,0deg); /* Safari and Chrome */
+    -o-transform:skew(4deg,0deg); /* Opera */
 }

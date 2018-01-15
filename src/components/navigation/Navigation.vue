@@ -1,8 +1,8 @@
 <template>
     <div class="navigation">
-        <a class="demo" href="//">Demo</a>
-        <a class="doc" href="https://github.com/prajna-project/prajna/wiki">Documention</a>
-        <a class="mail" href="mailto:youngleemails@gmail.com">Contact</a>
+        <p><a class="demo" href="//">{{nav[cursor]['demo']}}</a></p>
+        <p><a class="doc" href="https://github.com/prajna-project/prajna/wiki">{{nav[cursor]['wiki']}}</a></p>
+        <p><a class="mail" href="mailto:youngleemails@gmail.com">{{nav[cursor]['mail']}}</a></p>
     </div>
 </template>
 
