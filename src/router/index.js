@@ -25,7 +25,7 @@ appRouter.afterEach(function (to, from, ) {
         Vue.prajna.set({
             pageId: 'home-page'
         });
-        // Vue.prajna.pageView();
+        Vue.prajna.pageView();
         break;
     case 'DEMO': 
         Vue.prajna.set({

@@ -58,9 +58,9 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         prajnaServerUrls: {
           'dev': 'http://localhost:8081/store/es'
         },
-        progressive: {
-            scriptPath: `http://127.0.0.1:52513/prajna.1.0.0-rc.8.js`
-        }
+        // progressive: {
+        //     scriptPath: `http://127.0.0.1:50680/prajna.1.0.0-rc.10.js`
+        // }
       }
     }),
   ]

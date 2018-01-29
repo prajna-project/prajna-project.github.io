@@ -15,6 +15,10 @@
     cursor: pointer;
     display: inline-block;
 }
+.navigation a:last-child {
+    margin-right: 0;
+}
+
 @-webkit-keyframes make-it-bold {
   from { font-weight: 200; }
   to { font-weight: 500; }
