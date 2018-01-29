@@ -12,6 +12,5 @@ export default {
         };
     },
     created () {
-        console.log('hahaah', this.cursor);
     }
 };

@@ -1,63 +1,20 @@
 .navigation {
-    position: absolute;
-    width: 50%;
-    height: 156px;
-    top: 50%;
-    right: 0;
-    margin-top: -78px;
-    text-align: left;
-
-    /* position: fixed; */
-    /* bottom: 24px; */
-    /* display: block; */
-    /* height: 36px; */
-    /* width: 100%; */
-    /* text-align:center; */
-}
-.navigation .doc {
-    line-height: 42px;
-    font-size: 24px;
-    font-weight: 200;
-    margin-left: 16px;
-}
-.navigation .demo {
-    line-height: 42px;
-    font-size: 20px;
-    font-weight: 200;
-    margin-bottom: 12px;
-    margin-left: 8px;
-    transform:skew(4deg,0deg);
-    -ms-transform:skew(4deg,0deg); /* IE 9 */
-    -moz-transform:skew(4deg,0deg); /* Firefox */
-    -webkit-transform:skew(4deg,0deg); /* Safari and Chrome */
-    -o-transform:skew(4deg,0deg); /* Opera */
-}
-.navigation .mail {
-    line-height: 42px;
-    font-size: 20px;
-    font-weight: 200;
-    margin-top: 12px;
-    margin-left: 8px;
-    transform:skew(-4deg,0deg);
-    -ms-transform:skew(-4deg,0deg); /* IE 9 */
-    -moz-transform:skew(-4deg,0deg); /* Firefox */
-    -webkit-transform:skew(-4deg,0deg); /* Safari and Chrome */
-    -o-transform:skew(-4deg,0deg); /* Opera */
+    position: fixed;
+    bottom: 0;
+    display: block;
+    height: 42px;
+    width: 100%;
+    text-align:center;
 }
 .navigation a {
-    margin-right: 10px;
+    margin-right: 18px;
     text-decoration: none;
-    line-height: 36px;
+    line-height: 42px;
     font-size: 18px;
     color: #aa0000;
     cursor: pointer;
     display: inline-block;
 }
-.navigation a:hover {
-    /* animation: 1s make-it-bold ease-in forwards normal; */
-    font-weight: 500;
-}
-
 @-webkit-keyframes make-it-bold {
   from { font-weight: 200; }
   to { font-weight: 500; }

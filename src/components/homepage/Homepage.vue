@@ -1,9 +1,9 @@
 <template>
     <div>
         <div class="home-page">
-            <p class="prajna-text-prev bu">{{lang[prevCursor]}}</p>
-            <p class="prajna-text en">{{lang[cursor]}}</p>
-            <p class="prajna-text-next ch">{{lang[nextCursor]}}</p>
+            <div class="prajna-text-prev bu"><span>{{lang[prevCursor]}}</span></div>
+            <div class="prajna-text en"><span>{{lang[cursor]}}</span></div>
+            <div class="prajna-text-next ch"><span>{{lang[nextCursor]}}</span></div>
         </div>
         <navigation :cursor="cursor"></navigation>
     </div>
